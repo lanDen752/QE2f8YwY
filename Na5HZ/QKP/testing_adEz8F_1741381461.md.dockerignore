@@ -9,4 +9,3 @@ tests/aws/**/.terraform
 **/__pycache__
 target/
 htmlcov/
-.coverage
