@@ -1,0 +1,15 @@
+tests/unit/coverage
+
+.github/*
+
+packages/font/*
+
+libs/*
+
+examples/dist
+
+# auto gererated by build/build-entry.js
+components.json
+packages/theme-dark/index.less
+packages/theme-default/index.less
+packages/index.js
