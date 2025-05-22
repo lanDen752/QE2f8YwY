@@ -10,7 +10,6 @@ freebsd_task:
     - pkg install -y go124
     - pkg install -y git
 
-    - ln -s /usr/local/bin/go124 /usr/local/bin/go
     - pw useradd sftpgo -g sftpgo -w none -m
     - mkdir /home/sftpgo/sftpgo
     - chown -R sftpgo:sftpgo /home/sftpgo/sftpgo
