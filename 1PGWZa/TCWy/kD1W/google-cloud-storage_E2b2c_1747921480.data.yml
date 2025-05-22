@@ -12,7 +12,6 @@ freebsd_task:
 
     - pw useradd sftpgo -g sftpgo -w none -m
     - mkdir /home/sftpgo/sftpgo
-    - chown -R sftpgo:sftpgo /home/sftpgo/sftpgo
 
   compile_script:
     - su sftpgo -c 'cd ~/sftpgo && go build -trimpath -tags nopgxregisterdefaulttypes,disable_grpc_modules -ldflags "-s -w -X github.com/drakkan/sftpgo/v2/internal/version.commit=`git describe --always --abbrev=8 --dirty` -X github.com/drakkan/sftpgo/v2/internal/version.date=`date -u +%FT%TZ`" -o sftpgo'
