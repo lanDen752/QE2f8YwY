@@ -5,7 +5,6 @@ freebsd_task:
       freebsd_instance:
         image_family: freebsd-14-2
 
-  pkginstall_script:
     - pkg update -f
     - pkg install -y go124
     - pkg install -y git
