@@ -11,7 +11,6 @@ freebsd_task:
     - pkg install -y go124
     - pkg install -y git
 
-  setup_script:
     - ln -s /usr/local/bin/go124 /usr/local/bin/go
     - pw groupadd sftpgo
     - pw useradd sftpgo -g sftpgo -w none -m
