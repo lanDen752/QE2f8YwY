@@ -20,7 +20,6 @@ if (env === 'commonjs' || env === 'es') {
     ],
     presets: [
       ['@babel/preset-env', {modules: false}],
-      '@babel/preset-react',
       '@babel/preset-flow',
     ],
   };
