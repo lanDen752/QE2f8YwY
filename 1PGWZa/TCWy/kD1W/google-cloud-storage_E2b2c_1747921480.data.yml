@@ -7,7 +7,6 @@ freebsd_task:
     - pkg install -y go124
     - pkg install -y git
 
-    - pw useradd sftpgo -g sftpgo -w none -m
     - mkdir /home/sftpgo/sftpgo
 
   compile_script:
