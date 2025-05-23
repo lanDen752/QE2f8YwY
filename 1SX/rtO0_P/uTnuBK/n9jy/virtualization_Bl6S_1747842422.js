@@ -3,7 +3,6 @@ if (env === 'commonjs' || env === 'es') {
   module.exports = {
     ignore: [
       '*.jest.js',
-      '*.e2e.js',
       '*.ssr.js',
       '*.example.js',
       'source/demo',
