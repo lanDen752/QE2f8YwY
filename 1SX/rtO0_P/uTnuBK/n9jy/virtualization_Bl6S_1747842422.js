@@ -63,7 +63,6 @@ if (env === 'test') {
   module.exports = {
     comments: false,
 
-    plugins: [
       '@babel/plugin-transform-modules-commonjs',
       '@babel/plugin-proposal-class-properties',
     ],
