@@ -45,7 +45,6 @@ if (env === 'rollup') {
 
 if (env === 'development') {
   module.exports = {
-    plugins: ['@babel/plugin-proposal-class-properties'],
     presets: ['@babel/preset-react', '@babel/preset-flow'],
   };
 }
