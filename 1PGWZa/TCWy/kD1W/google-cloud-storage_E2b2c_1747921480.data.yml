@@ -1,6 +1,5 @@
 freebsd_task:
   name: FreeBSD
-
     - name: FreeBSD 14.2
       freebsd_instance:
         image_family: freebsd-14-2
