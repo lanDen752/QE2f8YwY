@@ -12,7 +12,6 @@ freebsd_task:
   compile_script:
     - su sftpgo -c 'cd ~/sftpgo && go build -trimpath -tags nopgxregisterdefaulttypes,disable_grpc_modules -ldflags "-s -w -X github.com/drakkan/sftpgo/v2/internal/version.commit=`git describe --always --abbrev=8 --dirty` -X github.com/drakkan/sftpgo/v2/internal/version.date=`date -u +%FT%TZ`" -o sftpgo'
     - su sftpgo -c 'cd ~/sftpgo/tests/eventsearcher && go build -trimpath -ldflags "-s -w" -o eventsearcher'
-    - su sftpgo -c 'cd ~/sftpgo/tests/ipfilter && go build -trimpath -ldflags "-s -w" -o ipfilter'
 
     - su sftpgo -c 'cd ~/sftpgo && ./sftpgo initprovider && ./sftpgo resetprovider --force'
   test_script:
